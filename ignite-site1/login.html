@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Login | FPS IGNITE XIII</title>
+<link rel="icon" href="logo.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="login">
+<div id="app-header"></div>
+<main>
+  <div class="narrow" style="padding-top:56px;max-width:560px">
+    <div class="eyebrow">Your next big idea starts here</div>
+    <h1 class="title">Enter the <span class="red">arena.</span></h1>
+    <p class="lead" style="font-size:12px;margin-bottom:24px">Sign in with the account issued by the IGNITE organizing team.</p>
+    <div class="card" style="padding:0 20px 22px">
+      <div class="tabs">
+        <button type="button" class="on" data-role="delegate">Delegate portal</button>
+        <button type="button" data-role="admin">Admin portal</button>
+      </div>
+      <form id="loginform">
+        <div class="field"><label for="email">Email address</label><input id="email" type="email" placeholder="Your registered email" required autocomplete="username"></div>
+        <div class="field"><label for="password">Password</label><input id="password" type="password" placeholder="Your password" required autocomplete="current-password"></div>
+        <button class="btn" type="submit">Sign in &#8599;</button>
+        <div class="help">Accounts are organizer-managed. Contact your event coordinator for access.</div>
+        <div class="msg" id="err"></div>
+      </form>
+    </div>
+    <a href="index.html" style="font-size:13px">&larr; Back to home</a>
+  </div>
+</main>
+<div id="app-footer"></div>
+<script src="app.js"></script>
+</body>
+</html>
